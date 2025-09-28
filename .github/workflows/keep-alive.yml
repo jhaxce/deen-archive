@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Curl n8n
-        run: curl https://n8n-tagy.onrender.com/
+        run: curl https://n8n-tagy.onrender.com/healthz
