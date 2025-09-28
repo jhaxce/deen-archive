@@ -1,0 +1,11 @@
+# Example GitHub Action
+name: Keep n8n Awake
+on:
+  schedule:
+    - cron: "*/5 * * * *" # every 5 minutes
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl n8n
+        run: curl https://n8n-tagy.onrender.com/
